@@ -12,7 +12,7 @@ Test Create Workbook
     Close Workbook
 
 Test Load Workbook
-    Open Workbook   D:/Projects/Python/robotframework-openpyxl/output/TestBook.xlsx
+    Open Workbook   output  TestBook.xlsx
     Get Active Sheet Name
     Set Sheet Name   Introduction_Modified
     ${sheetname}    Get Active Sheet Name

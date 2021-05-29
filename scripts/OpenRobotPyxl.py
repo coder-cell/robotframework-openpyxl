@@ -1,5 +1,6 @@
 import openpyxl
 from robot.api.deco import keyword, library
+from robot.api import logger
 
 
 @library
@@ -10,7 +11,6 @@ class OpenRobotPyxl:
         self.active_book = None
         self.path = None
         self.bookname = None
-        pass
 
     @keyword("Create New Workbook")
     def create_new_workbook(self, _path, book_name, sheet_name, postion=0):
@@ -41,9 +41,11 @@ class OpenRobotPyxl:
         return self.get_active_sheet().title
 
     @keyword('Load Workbook')
-    def load_workbook(self, bookname):
-        self.active_book = openpyxl.load_workbook(bookname)
+    def load_workbook(self, path, bookname):
+        self.active_book = openpyxl.load_workbook(path + "/" + bookname)
+        self.path = path
         self.bookname = bookname
+        self.active_sheet = None
         self.active_sheet = self.get_active_sheet()
 
 

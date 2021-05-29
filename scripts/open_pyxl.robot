@@ -33,5 +33,6 @@ Set Sheet Name
 
 Open Workbook
     [Documentation]
-    [Arguments]     ${Book Name}
-    [return]    pyxl.Load Workbook      ${Book Name}
+    [Arguments]     ${Path}     ${Book Name}
+    ${value}    pyxl.Load Workbook      ${Path}     ${Book Name}
+    [return]    ${value}
