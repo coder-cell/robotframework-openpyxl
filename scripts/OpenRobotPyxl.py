@@ -27,19 +27,24 @@ class OpenRobotPyxl:
 
     @keyword('Get Active Sheet')
     def get_active_sheet(self):
-        if self.active_book and self.active_sheet:
-            return self.active_sheet
+        if self.active_book:
+            if self.active_sheet:
+                return self.active_sheet
+            else:
+                # Return the first sheet in the work book.
+                return self.active_book.worksheets[0]
         else:
             return None
 
     @keyword('Active Sheet Name')
     def get_active_sheet_name(self):
-        if self.active_book and self.active_sheet:
-            return self.active_sheet.title
-        else:
-            return None
+        return self.get_active_sheet().title
 
-
+    @keyword('Load Workbook')
+    def load_workbook(self, bookname):
+        self.active_book = openpyxl.load_workbook(bookname)
+        self.bookname = bookname
+        self.active_sheet = self.get_active_sheet()
 
 
 
