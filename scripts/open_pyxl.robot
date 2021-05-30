@@ -31,6 +31,11 @@ Set Sheet Name
     Log     ${Title}
     ${sheet.title}  Set Variable    ${Title}
 
+Add Sheet
+    [Documentation]
+    [Arguments]     ${Sheet Name}   ${Position}=${0}
+    pyxl.Add Sheet  ${Sheet Name}   ${Position}
+
 Open Workbook
     [Documentation]
     [Arguments]     ${Path}     ${Book Name}

@@ -48,6 +48,10 @@ class OpenRobotPyxl:
         self.active_sheet = None
         self.active_sheet = self.get_active_sheet()
 
+    @keyword('Add Sheet')
+    def add_new_sheet(self, sheetname, index=0):
+        self.active_book.create_sheet(title=sheetname, index=index)
+
     @keyword('Insert Cell Value')
     def add_value_to_cell(self, row, col, value):
         self.active_sheet.cell(row, col, value)

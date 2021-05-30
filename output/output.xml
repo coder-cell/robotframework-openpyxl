@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.3 (Python 3.8.5 on win32)" generated="20210530 21:45:56.211" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0.3 (Python 3.8.5 on win32)" generated="20210530 21:56:21.640" rpa="false" schemaversion="2">
 <suite id="s1" name="Test-Openpyxl" source="D:\Projects\Python\robotframework-openpyxl\tests\test-openpyxl.robot">
 <test id="s1-t1" name="Test Create Workbook">
 <kw name="Create Workbook" library="open_pyxl">
@@ -14,69 +14,69 @@ sheet name and position of the sheet in the workbook.</doc>
 <arg>${BOOK_NAME}</arg>
 <arg>${SHEET_NAME}</arg>
 <arg>${POSTION}</arg>
-<status status="PASS" starttime="20210530 21:45:56.645" endtime="20210530 21:45:56.646"/>
+<status status="PASS" starttime="20210530 21:56:22.088" endtime="20210530 21:56:22.091"/>
 </kw>
-<status status="PASS" starttime="20210530 21:45:56.643" endtime="20210530 21:45:56.647"/>
+<status status="PASS" starttime="20210530 21:56:22.086" endtime="20210530 21:56:22.091"/>
 </kw>
 <kw name="Get Active Sheet" library="open_pyxl">
 <doc>Get Active Sheet in the current workbook.</doc>
 <kw name="Get Active Sheet" library="pyxl">
 <var>${value}</var>
-<msg timestamp="20210530 21:45:56.647" level="INFO">${value} = &lt;Worksheet "TestSheet"&gt;</msg>
-<status status="PASS" starttime="20210530 21:45:56.647" endtime="20210530 21:45:56.647"/>
+<msg timestamp="20210530 21:56:22.093" level="INFO">${value} = &lt;Worksheet "TestSheet"&gt;</msg>
+<status status="PASS" starttime="20210530 21:56:22.092" endtime="20210530 21:56:22.093"/>
 </kw>
-<status status="PASS" starttime="20210530 21:45:56.647" endtime="20210530 21:45:56.647"/>
+<status status="PASS" starttime="20210530 21:56:22.092" endtime="20210530 21:56:22.093"/>
 </kw>
 <kw name="Get Active Sheet Name" library="open_pyxl">
 <doc>Get Active Sheet Name in the current workbook.</doc>
 <kw name="Active Sheet Name" library="pyxl">
 <var>${value}</var>
-<msg timestamp="20210530 21:45:56.648" level="INFO">${value} = TestSheet</msg>
-<status status="PASS" starttime="20210530 21:45:56.648" endtime="20210530 21:45:56.648"/>
+<msg timestamp="20210530 21:56:22.094" level="INFO">${value} = TestSheet</msg>
+<status status="PASS" starttime="20210530 21:56:22.094" endtime="20210530 21:56:22.094"/>
 </kw>
-<status status="PASS" starttime="20210530 21:45:56.647" endtime="20210530 21:45:56.649"/>
+<status status="PASS" starttime="20210530 21:56:22.093" endtime="20210530 21:56:22.094"/>
 </kw>
 <kw name="Set Sheet Name" library="open_pyxl">
 <arg>Introduction</arg>
 <kw name="Get Active Sheet" library="pyxl">
 <var>${sheet}</var>
-<msg timestamp="20210530 21:45:56.649" level="INFO">${sheet} = &lt;Worksheet "TestSheet"&gt;</msg>
-<status status="PASS" starttime="20210530 21:45:56.649" endtime="20210530 21:45:56.649"/>
+<msg timestamp="20210530 21:56:22.095" level="INFO">${sheet} = &lt;Worksheet "TestSheet"&gt;</msg>
+<status status="PASS" starttime="20210530 21:56:22.095" endtime="20210530 21:56:22.095"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${Title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20210530 21:45:56.649" level="INFO">Introduction</msg>
-<status status="PASS" starttime="20210530 21:45:56.649" endtime="20210530 21:45:56.650"/>
+<msg timestamp="20210530 21:56:22.096" level="INFO">Introduction</msg>
+<status status="PASS" starttime="20210530 21:56:22.095" endtime="20210530 21:56:22.096"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${sheet.title}</var>
 <arg>${Title}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20210530 21:45:56.650" level="INFO">${sheet.title} = Introduction</msg>
-<status status="PASS" starttime="20210530 21:45:56.650" endtime="20210530 21:45:56.650"/>
+<msg timestamp="20210530 21:56:22.096" level="INFO">${sheet.title} = Introduction</msg>
+<status status="PASS" starttime="20210530 21:56:22.096" endtime="20210530 21:56:22.096"/>
 </kw>
-<status status="PASS" starttime="20210530 21:45:56.649" endtime="20210530 21:45:56.650"/>
+<status status="PASS" starttime="20210530 21:56:22.094" endtime="20210530 21:56:22.097"/>
 </kw>
 <kw name="Get Active Sheet Name" library="open_pyxl">
 <var>${sheetname}</var>
 <doc>Get Active Sheet Name in the current workbook.</doc>
 <kw name="Active Sheet Name" library="pyxl">
 <var>${value}</var>
-<msg timestamp="20210530 21:45:56.650" level="INFO">${value} = Introduction</msg>
-<status status="PASS" starttime="20210530 21:45:56.650" endtime="20210530 21:45:56.650"/>
+<msg timestamp="20210530 21:56:22.098" level="INFO">${value} = Introduction</msg>
+<status status="PASS" starttime="20210530 21:56:22.098" endtime="20210530 21:56:22.098"/>
 </kw>
-<msg timestamp="20210530 21:45:56.650" level="INFO">${sheetname} = Introduction</msg>
-<status status="PASS" starttime="20210530 21:45:56.650" endtime="20210530 21:45:56.650"/>
+<msg timestamp="20210530 21:56:22.098" level="INFO">${sheetname} = Introduction</msg>
+<status status="PASS" starttime="20210530 21:56:22.097" endtime="20210530 21:56:22.098"/>
 </kw>
 <kw name="Close Workbook" library="open_pyxl">
 <doc>The keywords to close the created workbook.</doc>
 <kw name="Close Workbook" library="pyxl">
-<status status="PASS" starttime="20210530 21:45:56.651" endtime="20210530 21:45:56.665"/>
+<status status="PASS" starttime="20210530 21:56:22.099" endtime="20210530 21:56:22.118"/>
 </kw>
-<status status="PASS" starttime="20210530 21:45:56.650" endtime="20210530 21:45:56.665"/>
+<status status="PASS" starttime="20210530 21:56:22.099" endtime="20210530 21:56:22.118"/>
 </kw>
-<status status="PASS" starttime="20210530 21:45:56.643" endtime="20210530 21:45:56.665"/>
+<status status="PASS" starttime="20210530 21:56:22.086" endtime="20210530 21:56:22.118"/>
 </test>
 <test id="s1-t2" name="Test Load Workbook">
 <kw name="Open Workbook" library="open_pyxl">
@@ -86,63 +86,63 @@ sheet name and position of the sheet in the workbook.</doc>
 <var>${value}</var>
 <arg>${Path}</arg>
 <arg>${Book Name}</arg>
-<msg timestamp="20210530 21:45:56.689" level="INFO">${value} = None</msg>
-<status status="PASS" starttime="20210530 21:45:56.666" endtime="20210530 21:45:56.690"/>
+<msg timestamp="20210530 21:56:22.146" level="INFO">${value} = None</msg>
+<status status="PASS" starttime="20210530 21:56:22.120" endtime="20210530 21:56:22.146"/>
 </kw>
-<status status="PASS" starttime="20210530 21:45:56.666" endtime="20210530 21:45:56.690"/>
+<status status="PASS" starttime="20210530 21:56:22.119" endtime="20210530 21:56:22.147"/>
 </kw>
 <kw name="Get Active Sheet Name" library="open_pyxl">
 <doc>Get Active Sheet Name in the current workbook.</doc>
 <kw name="Active Sheet Name" library="pyxl">
 <var>${value}</var>
-<msg timestamp="20210530 21:45:56.691" level="INFO">${value} = Introduction</msg>
-<status status="PASS" starttime="20210530 21:45:56.691" endtime="20210530 21:45:56.691"/>
+<msg timestamp="20210530 21:56:22.148" level="INFO">${value} = Introduction</msg>
+<status status="PASS" starttime="20210530 21:56:22.148" endtime="20210530 21:56:22.148"/>
 </kw>
-<status status="PASS" starttime="20210530 21:45:56.690" endtime="20210530 21:45:56.692"/>
+<status status="PASS" starttime="20210530 21:56:22.147" endtime="20210530 21:56:22.149"/>
 </kw>
 <kw name="Set Sheet Name" library="open_pyxl">
 <arg>Introduction_Modified</arg>
 <kw name="Get Active Sheet" library="pyxl">
 <var>${sheet}</var>
-<msg timestamp="20210530 21:45:56.693" level="INFO">${sheet} = &lt;Worksheet "Introduction"&gt;</msg>
-<status status="PASS" starttime="20210530 21:45:56.693" endtime="20210530 21:45:56.693"/>
+<msg timestamp="20210530 21:56:22.150" level="INFO">${sheet} = &lt;Worksheet "Introduction"&gt;</msg>
+<status status="PASS" starttime="20210530 21:56:22.149" endtime="20210530 21:56:22.150"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${Title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20210530 21:45:56.694" level="INFO">Introduction_Modified</msg>
-<status status="PASS" starttime="20210530 21:45:56.693" endtime="20210530 21:45:56.694"/>
+<msg timestamp="20210530 21:56:22.151" level="INFO">Introduction_Modified</msg>
+<status status="PASS" starttime="20210530 21:56:22.150" endtime="20210530 21:56:22.151"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${sheet.title}</var>
 <arg>${Title}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20210530 21:45:56.695" level="INFO">${sheet.title} = Introduction_Modified</msg>
-<status status="PASS" starttime="20210530 21:45:56.694" endtime="20210530 21:45:56.695"/>
+<msg timestamp="20210530 21:56:22.152" level="INFO">${sheet.title} = Introduction_Modified</msg>
+<status status="PASS" starttime="20210530 21:56:22.151" endtime="20210530 21:56:22.152"/>
 </kw>
-<status status="PASS" starttime="20210530 21:45:56.692" endtime="20210530 21:45:56.695"/>
+<status status="PASS" starttime="20210530 21:56:22.149" endtime="20210530 21:56:22.152"/>
 </kw>
 <kw name="Get Active Sheet Name" library="open_pyxl">
 <var>${sheetname}</var>
 <doc>Get Active Sheet Name in the current workbook.</doc>
 <kw name="Active Sheet Name" library="pyxl">
 <var>${value}</var>
-<msg timestamp="20210530 21:45:56.696" level="INFO">${value} = Introduction_Modified</msg>
-<status status="PASS" starttime="20210530 21:45:56.696" endtime="20210530 21:45:56.696"/>
+<msg timestamp="20210530 21:56:22.153" level="INFO">${value} = Introduction_Modified</msg>
+<status status="PASS" starttime="20210530 21:56:22.152" endtime="20210530 21:56:22.153"/>
 </kw>
-<msg timestamp="20210530 21:45:56.697" level="INFO">${sheetname} = Introduction_Modified</msg>
-<status status="PASS" starttime="20210530 21:45:56.695" endtime="20210530 21:45:56.697"/>
+<msg timestamp="20210530 21:56:22.153" level="INFO">${sheetname} = Introduction_Modified</msg>
+<status status="PASS" starttime="20210530 21:56:22.152" endtime="20210530 21:56:22.153"/>
 </kw>
 <kw name="Close Workbook" library="open_pyxl">
 <doc>The keywords to close the created workbook.</doc>
 <kw name="Close Workbook" library="pyxl">
-<status status="PASS" starttime="20210530 21:45:56.698" endtime="20210530 21:45:56.726"/>
+<status status="PASS" starttime="20210530 21:56:22.154" endtime="20210530 21:56:22.173"/>
 </kw>
-<status status="PASS" starttime="20210530 21:45:56.697" endtime="20210530 21:45:56.727"/>
+<status status="PASS" starttime="20210530 21:56:22.153" endtime="20210530 21:56:22.173"/>
 </kw>
-<status status="PASS" starttime="20210530 21:45:56.666" endtime="20210530 21:45:56.727"/>
+<status status="PASS" starttime="20210530 21:56:22.119" endtime="20210530 21:56:22.173"/>
 </test>
-<test id="s1-t3" name="Test Cell Value">
+<test id="s1-t3" name="Test New Sheet">
 <kw name="Open Workbook" library="open_pyxl">
 <arg>output</arg>
 <arg>TestBook.xlsx</arg>
@@ -150,66 +150,97 @@ sheet name and position of the sheet in the workbook.</doc>
 <var>${value}</var>
 <arg>${Path}</arg>
 <arg>${Book Name}</arg>
-<msg timestamp="20210530 21:45:56.758" level="INFO">${value} = None</msg>
-<status status="PASS" starttime="20210530 21:45:56.729" endtime="20210530 21:45:56.758"/>
+<msg timestamp="20210530 21:56:22.198" level="INFO">${value} = None</msg>
+<status status="PASS" starttime="20210530 21:56:22.174" endtime="20210530 21:56:22.198"/>
 </kw>
-<status status="PASS" starttime="20210530 21:45:56.728" endtime="20210530 21:45:56.759"/>
+<status status="PASS" starttime="20210530 21:56:22.174" endtime="20210530 21:56:22.198"/>
+</kw>
+<kw name="Add Sheet" library="open_pyxl">
+<arg>New Sheet</arg>
+<kw name="Add Sheet" library="pyxl">
+<arg>${Sheet Name}</arg>
+<arg>${Position}</arg>
+<status status="PASS" starttime="20210530 21:56:22.200" endtime="20210530 21:56:22.201"/>
+</kw>
+<status status="PASS" starttime="20210530 21:56:22.199" endtime="20210530 21:56:22.202"/>
+</kw>
+<kw name="Close Workbook" library="open_pyxl">
+<doc>The keywords to close the created workbook.</doc>
+<kw name="Close Workbook" library="pyxl">
+<status status="PASS" starttime="20210530 21:56:22.202" endtime="20210530 21:56:22.232"/>
+</kw>
+<status status="PASS" starttime="20210530 21:56:22.202" endtime="20210530 21:56:22.232"/>
+</kw>
+<status status="PASS" starttime="20210530 21:56:22.174" endtime="20210530 21:56:22.233"/>
+</test>
+<test id="s1-t4" name="Test Cell Value">
+<kw name="Open Workbook" library="open_pyxl">
+<arg>output</arg>
+<arg>TestBook.xlsx</arg>
+<kw name="Load Workbook" library="pyxl">
+<var>${value}</var>
+<arg>${Path}</arg>
+<arg>${Book Name}</arg>
+<msg timestamp="20210530 21:56:22.264" level="INFO">${value} = None</msg>
+<status status="PASS" starttime="20210530 21:56:22.235" endtime="20210530 21:56:22.264"/>
+</kw>
+<status status="PASS" starttime="20210530 21:56:22.234" endtime="20210530 21:56:22.265"/>
 </kw>
 <kw name="Get Active Sheet Name" library="open_pyxl">
 <doc>Get Active Sheet Name in the current workbook.</doc>
 <kw name="Active Sheet Name" library="pyxl">
 <var>${value}</var>
-<msg timestamp="20210530 21:45:56.760" level="INFO">${value} = Introduction_Modified</msg>
-<status status="PASS" starttime="20210530 21:45:56.760" endtime="20210530 21:45:56.760"/>
+<msg timestamp="20210530 21:56:22.266" level="INFO">${value} = New Sheet</msg>
+<status status="PASS" starttime="20210530 21:56:22.266" endtime="20210530 21:56:22.266"/>
 </kw>
-<status status="PASS" starttime="20210530 21:45:56.759" endtime="20210530 21:45:56.761"/>
+<status status="PASS" starttime="20210530 21:56:22.265" endtime="20210530 21:56:22.266"/>
 </kw>
 <kw name="Insert Cell Value" library="open_pyxl">
 <arg>${1}</arg>
-<arg>${1}</arg>
+<arg>${2}</arg>
 <arg>New Data</arg>
 <kw name="Insert Cell Value" library="pyxl">
 <arg>${row}</arg>
 <arg>${col}</arg>
 <arg>${value}</arg>
-<status status="PASS" starttime="20210530 21:45:56.762" endtime="20210530 21:45:56.763"/>
+<status status="PASS" starttime="20210530 21:56:22.269" endtime="20210530 21:56:22.269"/>
 </kw>
-<status status="PASS" starttime="20210530 21:45:56.761" endtime="20210530 21:45:56.764"/>
+<status status="PASS" starttime="20210530 21:56:22.267" endtime="20210530 21:56:22.270"/>
 </kw>
 <kw name="Get Cell Value" library="open_pyxl">
 <var>${value}</var>
 <arg>${1}</arg>
-<arg>${1}</arg>
+<arg>${2}</arg>
 <kw name="Get Cell Value" library="pyxl">
 <var>${value}</var>
 <arg>${row}</arg>
 <arg>${col}</arg>
-<msg timestamp="20210530 21:45:56.766" level="INFO">${value} = New Data</msg>
-<status status="PASS" starttime="20210530 21:45:56.765" endtime="20210530 21:45:56.766"/>
+<msg timestamp="20210530 21:56:22.272" level="INFO">${value} = New Data</msg>
+<status status="PASS" starttime="20210530 21:56:22.272" endtime="20210530 21:56:22.272"/>
 </kw>
-<msg timestamp="20210530 21:45:56.767" level="INFO">${value} = New Data</msg>
-<status status="PASS" starttime="20210530 21:45:56.764" endtime="20210530 21:45:56.767"/>
+<msg timestamp="20210530 21:56:22.273" level="INFO">${value} = New Data</msg>
+<status status="PASS" starttime="20210530 21:56:22.270" endtime="20210530 21:56:22.273"/>
 </kw>
 <kw name="Close Workbook" library="open_pyxl">
 <doc>The keywords to close the created workbook.</doc>
 <kw name="Close Workbook" library="pyxl">
-<status status="PASS" starttime="20210530 21:45:56.767" endtime="20210530 21:45:56.797"/>
+<status status="PASS" starttime="20210530 21:56:22.273" endtime="20210530 21:56:22.311"/>
 </kw>
-<status status="PASS" starttime="20210530 21:45:56.767" endtime="20210530 21:45:56.797"/>
+<status status="PASS" starttime="20210530 21:56:22.273" endtime="20210530 21:56:22.311"/>
 </kw>
-<status status="PASS" starttime="20210530 21:45:56.727" endtime="20210530 21:45:56.797"/>
+<status status="PASS" starttime="20210530 21:56:22.233" endtime="20210530 21:56:22.311"/>
 </test>
 <doc>Test Open Pyxl Robot file Wrapper</doc>
-<status status="PASS" starttime="20210530 21:45:56.213" endtime="20210530 21:45:56.798"/>
+<status status="PASS" starttime="20210530 21:56:21.643" endtime="20210530 21:56:22.312"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Test-Openpyxl">Test-Openpyxl</stat>
+<stat pass="4" fail="0" skip="0" id="s1" name="Test-Openpyxl">Test-Openpyxl</stat>
 </suite>
 </statistics>
 <errors>
