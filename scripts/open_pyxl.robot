@@ -36,3 +36,14 @@ Open Workbook
     [Arguments]     ${Path}     ${Book Name}
     ${value}    pyxl.Load Workbook      ${Path}     ${Book Name}
     [return]    ${value}
+
+Insert Cell Value
+    [Documentation]
+    [Arguments]     ${row}  ${col}  ${value}
+    pyxl.Insert Cell Value  ${row}  ${col}  ${value}
+
+Get Cell Value
+    [Documentation]
+    [Arguments]     ${row}  ${col}
+    ${value}    pyxl.Get Cell Value     ${row}  ${col}
+    [return]    ${value}

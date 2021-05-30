@@ -18,3 +18,9 @@ Test Load Workbook
     ${sheetname}    Get Active Sheet Name
     Close Workbook
 
+Test Cell Value
+    Open Workbook   output  TestBook.xlsx
+    Get Active Sheet Name
+    Insert Cell Value   ${1}    ${1}    New Data
+    ${value}    Get Cell Value  ${1}    ${1}
+    Close Workbook
