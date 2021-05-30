@@ -4,6 +4,7 @@ Resource    scripts/open_pyxl.robot
 
 *** Test Cases ***
 Test Create Workbook
+    [Tags]      skip
     Create Workbook   output    TestBook  TestSheet   ${0}
     Get Active Sheet
     Get Active Sheet Name
@@ -12,6 +13,7 @@ Test Create Workbook
     Close Workbook
 
 Test Load Workbook
+    [Tags]      skip
     Open Workbook   output  TestBook.xlsx
     Get Active Sheet Name
     Set Sheet Name   Introduction_Modified
