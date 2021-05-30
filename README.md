@@ -1,3 +1,3 @@
 # robotframework-openpyxl
-@Robotframework
+(@Robotframework)[http://robotframework.org/]
 Robot Framework library for Openpyxl
