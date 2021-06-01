@@ -42,10 +42,10 @@ Open Workbook
     ${value}    pyxl.Load Workbook      ${Path}     ${Book Name}
     [return]    ${value}
 
-Insert Cell Value
+Set Cell Value
     [Documentation]
     [Arguments]     ${row}  ${col}  ${value}
-    pyxl.Insert Cell Value  ${row}  ${col}  ${value}
+    pyxl.Set Cell Value  ${row}  ${col}  ${value}
 
 Get Cell Value
     [Documentation]

@@ -28,6 +28,6 @@ Test New Sheet
 Test Cell Value
     Open Workbook   output  TestBook.xlsx
     Get Active Sheet Name
-    Insert Cell Value   ${1}    ${2}    New Data
+    Set Cell Value   ${1}    ${2}    New Data
     ${value}    Get Cell Value  ${1}    ${2}
     Close Workbook
