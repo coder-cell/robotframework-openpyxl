@@ -58,6 +58,6 @@ class OpenRobotPyxl:
 
     @keyword('Get Cell Value')
     def get_cell_value(self, row, col):
-        return self.active_sheet._get_cell(row, col).value
+        return self.active_sheet.cell(row, col).value
 
 
