@@ -52,3 +52,30 @@ Get Cell Value
     [Arguments]     ${row}  ${col}
     ${value}    pyxl.Get Cell Value     ${row}  ${col}
     [return]    ${value}
+
+Insert Row
+    [Documentation]
+    [Arguments]     ${row number}
+    ${value}    pyxl.Insert Row    ${row number}
+    [return]    ${value}
+
+
+Insert Column
+    [Documentation]
+    [Arguments]     ${column number}
+    ${value}    pyxl.Insert Column    ${column number}
+    [return]    ${value}
+
+
+Delete Row
+    [Documentation]
+    [Arguments]     ${row number}
+    ${value}    pyxl.Delete Row    ${row number}
+    [return]    ${value}
+
+
+Delete Column
+    [Documentation]
+    [Arguments]     ${column number}
+    ${value}    pyxl.Delete Column    ${column number}
+    [return]    ${value}

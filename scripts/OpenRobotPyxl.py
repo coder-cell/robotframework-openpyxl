@@ -60,4 +60,18 @@ class OpenRobotPyxl:
     def get_cell_value(self, row, col):
         return self.active_sheet.cell(row, col).value
 
+    @keyword('Insert Row')
+    def insert_empty_row(self, row_number):
+        return self.active_sheet.insert_rows(row_number)
 
+    @keyword('Insert Column')
+    def insert_empty_col(self, col_number):
+        return self.active_sheet.insert_cols(col_number)
+
+    @keyword('Delete Row')
+    def delete_row(self, row_number):
+        return self.active_sheet.delete_rows(row_number)
+
+    @keyword('Delete Column')
+    def delete_col(self, col_number):
+        return self.active_sheet.delete_cols(col_number)
