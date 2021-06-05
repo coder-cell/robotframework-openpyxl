@@ -79,3 +79,16 @@ Delete Column
     [Arguments]     ${column number}
     ${value}    pyxl.Delete Column    ${column number}
     [return]    ${value}
+
+Insert List To Row
+    [Documentation]
+    [Arguments]     ${Row Number}   ${Column Number}    ${List Data}
+    ${value}    pyxl.Convert List to Row    ${Row Number}   ${Column Number}    ${List Data}
+    [return]    ${value}
+
+
+Insert List To Column
+    [Documentation]
+    [Arguments]     ${Row Number}   ${Column Number}    ${List Data}
+    ${value}    pyxl.Convert List to Column    ${Row Number}   ${Column Number}    ${List Data}
+    [return]    ${value}

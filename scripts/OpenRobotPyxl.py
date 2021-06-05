@@ -75,3 +75,24 @@ class OpenRobotPyxl:
     @keyword('Delete Column')
     def delete_col(self, col_number):
         return self.active_sheet.delete_cols(col_number)
+
+    @keyword('Convert List to Row')
+    def insert_value_to_row(self, row, col, listofdata):
+        if type(listofdata) == list:
+            datalength = len(listofdata)
+            for index, row_ in enumerate(range(row, row+datalength)):
+                cell = self.active_sheet.cell(row_, col)
+                cell.value = listofdata[index]
+        else:
+            return Exception("The data should be of list.")
+
+    @keyword('Convert List to Column')
+    def insert_value_to_row(self, row, col, listofdata):
+        if type(listofdata) == list:
+            datalength = len(listofdata)
+            for index, col_ in enumerate(range(col, col + datalength)):
+                cell = self.active_sheet.cell(row, col_)
+                cell.value = listofdata[index]
+        else:
+            return Exception("The data should be of list.")
+        return True
